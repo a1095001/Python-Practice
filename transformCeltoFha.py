@@ -4,10 +4,9 @@ import time
 from sys import exit
 
 flag = 0
-flag = 'N'
 while(flag == 0):
     print('是否要开始换算程序？\n [1]:开始\n [2]:退出')
-    mode = input('输入1进入')
+    mode = input()
     while mode == 1 or mode == 2:
         if mode == 1:
             Celsius = 0
@@ -23,12 +22,12 @@ while(flag == 0):
             Celsius = (Fharenheit - 32)/1.8
             print('{2}℉ 等于{3}℃'.format(Fharenheit , Celsius))
             pass
-    else flag == 0:
-        print('是否要退出换算？y/n?')
-        temp = input()
-        if temp == 'y':
-            print('程序将在1S后退出')
-            time.sleep(1)
-            exit(0)
-            pass
+else:
+    print('是否要退出换算？y/n?')
+    temp = input()
+    if temp == 'y':
+        print('程序将在1S后退出')
+        time.sleep(1)
+        exit(0)
         pass
+    pass
