@@ -20,7 +20,7 @@ while is_int(number) == False:
     is_int(number)
     pass
 else:
-    int(number)
+    number = int(number)
     temp = number % 2
     if temp != 0:
         print('{}是一个奇数'.format(number))
