@@ -6,8 +6,8 @@ def user_input():
     input_list = []
     # a*x^2 + b*x + c = d
     # for correctly result, a should be 1, by now
-    #a = float(input('Please input the first mumber: '))
-    b = float(input('Please input the second mumber: '))
+    #a = float(input('Please input the first number: '))
+    b = float(input('Please input the second number: '))
     c = float(input('Please input the third number: '))
     #d = float(input('And result: '))
     e = abs(b / 2)
@@ -15,7 +15,7 @@ def user_input():
     input_list = [c,e,f]
     return input_list
 
-def user_funtion(resource):
+def user_function(resource):
     result = []
     u = resource[2] - resource[0]
     if u < 0:
@@ -36,7 +36,7 @@ def main():
         if data[0] == 0:
             return 0
         else:
-            data_result = user_funtion(data)
+            data_result = user_function(data)
             user_output(data_result)
 
 start = time.time()
