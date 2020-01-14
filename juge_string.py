@@ -7,8 +7,9 @@ def is_number(s):
     except ValueError:                # 如果不能运行float(s)语句，返回False
         pass                          # 
     try:
-        unicodedata.numeric(s)        
-        return True
+        for i in s:
+            unicodedata.numeric(s)
+            return True
     except (TypeError, ValueError):
         pass
     return False
