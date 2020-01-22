@@ -37,4 +37,3 @@ for i in range(1 , bouldery , 1):
         pass
     break
 print(prime_list)
-
