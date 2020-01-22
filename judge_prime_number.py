@@ -19,12 +19,12 @@ def is_int(num):
     return False
 
 def judge(num):
-    num = float(num)
+    num = int(num)
     if num == 1:
         return False
     else:
         square_num = math.floor(num ** 0.5)
-        for i in range(2,square_num + 1):    #创建一个包含2到square_num的'range'，查找因子
+        for i in range(2,(square_num + 1)):    #创建一个包含2到square_num的'range'，查找因子
             if (num % i) == 0:
                 return False
             else:
@@ -35,7 +35,7 @@ def judge(num):
 
 
 
-num = input('请输入一个质数：')
+num = input('请输入一个整数：')
 while is_int(num) == False:
     num = input('非法输入！请重新输入一个合法的整数：')
     num = is_int(num)
