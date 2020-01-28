@@ -24,13 +24,13 @@ def judge(num):
         return False
     else:
         square_num = math.floor(num ** 0.5)
-        for i in range(2,(square_num + 1)):    #创建一个包含2到square_num的'range'，查找因子
-            if (num % i) == 0:
+        for s in range(2,(square_num + 1)):    #创建一个包含2到square_num的'range'，查找因子
+            if (num % s) == 0:
                 return False
-            else:
-                return True
-            pass
+        else:
+            return True
         pass
+
 
 
 
@@ -46,10 +46,8 @@ else:
     while num < 0:
         key = input('你输入的是一个负数，负数并不是质数！是否将其转换为对应的正数进行判别？  [y/n]:')
         if key == 'y':
-            num = -num
-            temp = num
-            judge(num)
-            if judge(num) == False:
+            temp = -num
+            if judge(temp) == False:
                 print('{}是一个合数'.format(temp))
                 break
             else:
@@ -64,12 +62,10 @@ else:
         break
     else:
         temp = num
-        if num == 1:
-            print('1既不是质数也不是合数！')
-            pass
-        judge(num)
         if judge(num) == True:
             print('{}是一个素数'.format(temp))
             pass
-        else:
+        elif temp == 1:
+            print('{}既不是素数也不是合数'.format(temp))
+        elif judge(num) == False:
             print('{}是一个合数'.format(temp))
