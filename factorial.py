@@ -17,3 +17,4 @@ def factorial(number):
     if number > 1:
         return number * factorial(number - 1)
 
+num = int(input('请输入您要计算的数：'))
