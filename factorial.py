@@ -29,14 +29,14 @@ print('{}! = {}'.format(num , factorial(num)))
 #  方法三：循环语句
 num = int(input('请输入要计算的数字：'))
 factorial = 1
-for count in range(1 , num + 1 , 1):
-    while num < 0:
-        num = input('负数没有阶乘！请重新输入一个自然数：')
-        pass
-    if num == 1 or 0:
-        print('1! = 1')
-        break
-    elif num > 1:
+while num < 0:
+    num = input('负数没有阶乘！请重新输入一个自然数：')
+    pass
+if num == 1 or 0:
+    print('1! = 1')
+    pass
+elif num > 1:
+    for count in range(1 , num + 1 , 1):
         factorial = factorial * count
         pass
     print('{0}! = {1}'.format(count , factorial))
