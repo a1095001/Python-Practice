@@ -40,3 +40,5 @@ elif num > 1:
         factorial = factorial * count
         pass
     print('{0}! = {1}'.format(count , factorial))
+
+# 还可以使用reduce()函数来实现
