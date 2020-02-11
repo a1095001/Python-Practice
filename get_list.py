@@ -30,9 +30,11 @@ print("c" in li)
 
 # delete the element
 print(li.remove('two'))
-print(li.remove('new'))                                                          # 删除首次出现的一个值,第二个 'new' 未删除
+# 删除首次出现的一个值,第二个 'new' 未删除
+print(li.remove('new'))
 print(li)
-print(li.pop())                                                                  # pop 会做两件事: 删除 list 的最后一个元素,然后返回删除元素的值
+# pop 会做两件事: 删除 list 的最后一个元素,然后返回删除元素的值
+print(li.pop())
 print(li)
 
 # list 运算符
