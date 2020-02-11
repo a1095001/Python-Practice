@@ -99,3 +99,9 @@ li = ["a", "mpilgrim", "foo", "b", "c", "b", "d", "d"]
 print([elem for elem in li if len(elem) > 1])
 print([elem for elem in li if elem != "b"])
 print([elem for elem in li if li.count(elem) == 1])
+# list 映射解析的实现
+list1 = []
+for elem in li:
+        if li.count(elem) == 1:
+                list1.append(elem)
+print(list1)
