@@ -20,7 +20,7 @@ def factorial(number):
     elif number == 1:
         return 1
     else:
-        return number * (number - 1)
+        return number * factorial(number - 1)
 
 num = int(input('请输入您要计算的数：'))
 print('{}! = {}'.format(num , factorial(num)))
