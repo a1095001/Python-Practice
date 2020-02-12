@@ -1,3 +1,4 @@
+# 方法一：
 def index_of_str(s1, s2):
     #split这个 函数分割字符，返回的 是分割后的元素组成的列表
     lt=s1.split(s2)
@@ -11,3 +12,13 @@ s1="www.google.com"
 s2="google"
 index_of_str(s1,s2)
 print(index_of_str(s1,s2))
+
+
+# 方法二：
+s1="www.google.com"
+s2="google"
+if s1.find(s2) == -1:
+    print("不存在！")
+    pass
+else:
+    print("存在！")
