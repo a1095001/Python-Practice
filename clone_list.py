@@ -12,7 +12,12 @@ array_clone = array_clone.extend(array)
 clone_array = list(array)
 '''
 
+'''
 # 方法三
 clone_array = array[:]
+'''
+
+# 方法四：使用copy
+clone_array = array.copy()
 print(array)
 print(clone_array)
