@@ -1,6 +1,6 @@
 str_1 = "www.s-keyman.site"
 def rotate(input,d): 
-    # 去掉头d个字符串
+    # 截取头d个字符串
     Lfirst = input[:d]
     # 截取从d到末尾的字符串
     Lsecond = input[d:]
