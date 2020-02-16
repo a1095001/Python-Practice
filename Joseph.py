@@ -1,3 +1,4 @@
+# 这道题没看懂
 people={}
 for x in range(1,31):
     people[x]=1
